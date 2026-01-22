@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+:root {
+  /* K8s-inspired color palette - Dark theme */
+  --background: #0a1628;
+  --foreground: #e5e7eb;
+  --primary: #326ce5;
+  --primary-foreground: #ffffff;
+  --secondary: #00b4d8;
+  --accent: #90e0ef;
+  --card-bg: #111827;
+  --card-border: #1f2937;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-card-bg: var(--card-bg);
+  --color-card-border: var(--card-border);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-danger: var(--danger);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+}
