@@ -10,9 +10,6 @@ export default function DocsLayout({
       category: 'Getting Started',
       href: '/docs',
       items: [
-        { href: '/docs', title: 'Overview' },
-        { href: '/docs/quick-start', title: 'Quick Start' },
-        { href: '/docs/requirements', title: 'Requirements' },
       ],
     },
     {
