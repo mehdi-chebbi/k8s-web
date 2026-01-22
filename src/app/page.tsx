@@ -2,50 +2,7 @@
 
 export default function Home() {
   return (
-    <div className="min-h-screen" style={{ backgroundColor: 'var(--background)' }}>
-      {/* Navigation */}
-      <nav className="sticky top-0 z-50 border-b" style={{ backgroundColor: 'var(--background)', borderColor: 'var(--card-border)' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
-            {/* Logo */}
-            <div className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: 'var(--primary)' }}>
-                <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M4 9V15H9V17H2V7H9V9H4Z" fill="white" />
-                  <path d="M11 7V17H13V13H17V17H19V7H17V11H13V7H11Z" fill="white" />
-                  <circle cx="10" cy="6" r="2" fill="white" />
-                  <circle cx="14" cy="18" r="2" fill="white" />
-                </svg>
-              </div>
-              <span className="text-2xl font-bold" style={{ color: 'var(--foreground)' }}>Kubemate</span>
-            </div>
-
-            {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center gap-8">
-              <a href="#features" className="hover:text-[var(--primary)] transition-colors" style={{ color: 'var(--foreground)' }}>Features</a>
-              <a href="#use-cases" className="hover:text-[var(--primary)] transition-colors" style={{ color: 'var(--foreground)' }}>Use Cases</a>
-              <a href="#security" className="hover:text-[var(--primary)] transition-colors" style={{ color: 'var(--foreground)' }}>Security</a>
-              <div className="flex gap-3">
-                <a
-                  href="/docs"
-                  className="px-4 py-2 rounded-lg font-medium transition-all hover:scale-105"
-                  style={{ backgroundColor: 'var(--card-bg)', color: 'var(--foreground)', border: '1px solid var(--card-border)' }}
-                >
-                  Documentation
-                </a>
-              </div>
-            </div>
-
-            {/* Mobile menu button */}
-            <button className="md:hidden p-2 rounded-lg" style={{ color: 'var(--foreground)' }}>
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </nav>
-
+    <>
       {/* Hero Section */}
       <section className="relative overflow-hidden py-20 sm:py-32">
         {/* Background gradient */}
@@ -491,75 +448,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+              </section>
 
-
-      {/* Footer */}
-      <footer className="py-12 border-t" style={{ borderColor: 'var(--card-border)' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-            {/* Brand */}
-            <div>
-              <div className="flex items-center gap-2 mb-4">
-                <div className="w-8 h-8 rounded-lg flex items-center justify-center" style={{ backgroundColor: 'var(--primary)' }}>
-                  <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4 9V15H9V17H2V7H9V9H4Z" fill="white" />
-                    <path d="M11 7V17H13V13H17V17H19V7H17V11H13V7H11Z" fill="white" />
-                    <circle cx="10" cy="6" r="2" fill="white" />
-                    <circle cx="14" cy="18" r="2" fill="white" />
-                  </svg>
-                </div>
-                <span className="text-xl font-bold" style={{ color: 'var(--foreground)' }}>Kubemate</span>
-              </div>
-              <p style={{ color: 'var(--foreground)', opacity: 0.7 }}>
-                Talk to your Kubernetes cluster, don't command it.
-              </p>
-            </div>
-
-            {/* Product */}
-            <div>
-              <h4 className="font-semibold mb-4" style={{ color: 'var(--foreground)' }}>Product</h4>
-              <ul className="space-y-2">
-                <li><a href="#features" className="hover:text-[var(--primary)] transition-colors" style={{ color: 'var(--foreground)', opacity: 0.7 }}>Features</a></li>
-                <li><a href="#security" className="hover:text-[var(--primary)] transition-colors" style={{ color: 'var(--foreground)', opacity: 0.7 }}>Security</a></li>
-                <li><a href="/docs" className="hover:text-[var(--primary)] transition-colors" style={{ color: 'var(--foreground)', opacity: 0.7 }}>Documentation</a></li>
-              </ul>
-            </div>
-
-            {/* Resources */}
-            <div>
-              <h4 className="font-semibold mb-4" style={{ color: 'var(--foreground)' }}>Resources</h4>
-              <ul className="space-y-2">
-                <li><a href="/docs/getting-started" className="hover:text-[var(--primary)] transition-colors" style={{ color: 'var(--foreground)', opacity: 0.7 }}>Getting Started</a></li>
-                <li><a href="/docs/deployment" className="hover:text-[var(--primary)] transition-colors" style={{ color: 'var(--foreground)', opacity: 0.7 }}>Deployment Guide</a></li>
-                <li><a href="/docs/api-reference" className="hover:text-[var(--primary)] transition-colors" style={{ color: 'var(--foreground)', opacity: 0.7 }}>API Reference</a></li>
-              </ul>
-            </div>
-
-            {/* Community */}
-            <div>
-              <h4 className="font-semibold mb-4" style={{ color: 'var(--foreground)' }}>Community</h4>
-              <ul className="space-y-2">
-                <li><a href="https://github.com" className="hover:text-[var(--primary)] transition-colors" style={{ color: 'var(--foreground)', opacity: 0.7 }}>GitHub</a></li>
-                <li><a href="#" className="hover:text-[var(--primary)] transition-colors" style={{ color: 'var(--foreground)', opacity: 0.7 }}>Twitter</a></li>
-                <li><a href="#" className="hover:text-[var(--primary)] transition-colors" style={{ color: 'var(--foreground)', opacity: 0.7 }}>Discord</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="pt-8 border-t flex flex-col sm:flex-row justify-between items-center gap-4" style={{ borderColor: 'var(--card-border)' }}>
-            <p style={{ color: 'var(--foreground)', opacity: 0.6 }}>
-              © 2025 Kubemate. MIT License.
-            </p>
-            <div className="flex items-center gap-4" style={{ color: 'var(--foreground)', opacity: 0.6 }}>
-              <span>Powered by</span>
-              <span className="px-3 py-1 rounded-lg text-sm font-medium" style={{ backgroundColor: 'var(--card-bg)', border: '1px solid var(--card-border)' }}>
-                OpenRouter
-              </span>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </div>
+    </>
   );
 }
