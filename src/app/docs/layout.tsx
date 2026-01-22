@@ -45,13 +45,7 @@ export default function DocsLayout({
         { href: '/docs/security/data-protection', title: 'Data Protection' },
       ],
     },
-    {
-      category: 'Resources',
-      items: [
-        { href: '/docs/api-reference', title: 'API Reference' },
-        { href: '/docs/troubleshooting', title: 'Troubleshooting' },
-      ],
-    },
+
   ];
 
   return (

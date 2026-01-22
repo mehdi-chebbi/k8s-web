@@ -11,24 +11,58 @@ export default function QuickStartPage() {
       </div>
 
       <h1 className="text-4xl sm:text-5xl font-bold mb-6" style={{ color: 'var(--foreground)' }}>
-        Quick Start
+        Getting Started
       </h1>
 
-      <p className="text-xl mb-12" style={{ color: 'var(--foreground)', opacity: 0.8 }}>
-        Ready to get started with Kubemate?
+      <p className="text-lg mb-8 leading-relaxed" style={{ color: 'var(--foreground)', opacity: 0.8 }}>
+        These are the basic concepts you need to understand to start using Kubemate.
       </p>
 
-      <div className="flex justify-center">
-        <a
-          href="/docs/quick-start"
-          className="inline-flex items-center gap-3 px-8 py-4 rounded-xl font-semibold text-lg transition-all hover:scale-105 hover:shadow-2xl"
-          style={{ backgroundColor: 'var(--primary)', color: 'var(--primary-foreground)' }}
-        >
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7l0 0l0 0l0 0l7-7h-4" />
-          </svg>
-          Get Started
-        </a>
+      <p className="text-lg mb-8 leading-relaxed" style={{ color: 'var(--foreground)', opacity: 0.8 }}>
+        The absolute minimum setup to start using Kubemate is:
+      </p>
+
+      <div className="space-y-4 mb-8">
+        <div className="flex items-start gap-3">
+          <div className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-1" style={{ backgroundColor: 'var(--primary)', color: 'var(--primary-foreground)' }}>
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+            </svg>
+          </div>
+          <div>
+            <p className="font-semibold" style={{ color: 'var(--foreground)' }}>
+              A Kubernetes cluster connection
+            </p>
+          </div>
+        </div>
+
+        <div className="flex items-start gap-3">
+          <div className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-1" style={{ backgroundColor: 'var(--primary)', color: 'var(--primary-foreground)' }}>
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+            </svg>
+          </div>
+          <div>
+            <p className="font-semibold" style={{ color: 'var(--foreground)' }}>
+              An LLM provider API key
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="p-6 rounded-2xl mb-8" style={{ backgroundColor: 'rgba(50, 108, 229, 0.1)', border: '1px solid var(--primary)' }}>
+        <p className="text-lg leading-relaxed" style={{ color: 'var(--foreground)' }}>
+          that's it!
+        </p>
+      </div>
+
+      <div className="p-6 rounded-2xl" style={{ backgroundColor: 'var(--card-bg)', border: '1px solid var(--card-border)' }}>
+        <p className="text-lg leading-relaxed" style={{ color: 'var(--foreground)', opacity: 0.8 }}>
+          To make things even easier, Kubemate supports multiple LLM providers including OpenAI, Anthropic, and others. You can connect to your Kubernetes cluster using a kubeconfig file, and the application ensures all interactions are read-only by default for maximum security.
+        </p>
+        <p className="text-lg leading-relaxed mt-4" style={{ color: 'var(--foreground)', opacity: 0.8 }}>
+          So you don't need to do anything more to start exploring your clusters right now, however take your time reading the information below to get a deeper understanding about how these concepts work.
+        </p>
       </div>
     </div>
   );
