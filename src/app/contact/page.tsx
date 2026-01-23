@@ -44,7 +44,7 @@ export default function ContactPage() {
               Get in Touch
             </h1>
             <p className="text-xl leading-relaxed" style={{ color: 'var(--foreground)', opacity: 0.8 }}>
-              Have questions about Kubemate? We'd love to hear from you.
+              Have questions about KubeMate? We'd love to hear from you.
             </p>
           </div>
 
@@ -185,7 +185,7 @@ export default function ContactPage() {
                 <h3 className="text-lg font-semibold" style={{ color: 'var(--foreground)' }}>Email</h3>
               </div>
               <p className="leading-relaxed" style={{ color: 'var(--foreground)', opacity: 0.8 }}>
-                support@kubemate.io
+                support@KubeMate.io
               </p>
               <p className="text-sm mt-2 leading-relaxed" style={{ color: 'var(--foreground)', opacity: 0.6 }}>
                 We typically respond within 24 hours

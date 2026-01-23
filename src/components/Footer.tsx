@@ -11,14 +11,14 @@ export default function Footer() {
             <div className="flex items-center gap-2">
               <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: 'var(--primary)' }}>
                 <Image
-                                src="/icon.png"
-                                alt="Kubemate"
+                                src="/kube.svg"
+                                alt="KubeMate"
                        width={80}
                                 height={80}
                                 className="w-full h-full object-cover"
                               />
               </div>
-              <span className="text-xl font-bold" style={{ color: 'var(--foreground)' }}>Kubemate</span>
+              <span className="text-xl font-bold" style={{ color: 'var(--foreground)' }}>KubeMate</span>
             </div>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--foreground)', opacity: 0.7 }}>
               Talk to your Kubernetes cluster, don't command it. AI-powered cluster management made simple.
@@ -114,7 +114,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t flex flex-col md:flex-row justify-between items-center gap-4" style={{ borderColor: 'var(--card-border)' }}>
           <p className="text-sm" style={{ color: 'var(--foreground)', opacity: 0.6 }}>
-            © {new Date().getFullYear()} Kubemate. All rights reserved.
+            © {new Date().getFullYear()} KubeMate. All rights reserved.
           </p>
           <div className="flex gap-6">
             <Link href="#" className="text-sm transition-colors hover:text-[var(--primary)]" style={{ color: 'var(--foreground)', opacity: 0.6 }}>

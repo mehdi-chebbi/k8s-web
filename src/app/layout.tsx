@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Kubemate - AI-Powered Kubernetes Assistant",
-  description: "Talk to your Kubernetes cluster, don't command it. Kubemate combines AI with Kubernetes to give you natural language cluster management, intelligent troubleshooting, and visual topology.",
+  title: "KubeMate - AI-Powered Kubernetes Assistant",
+  description: "Talk to your Kubernetes cluster, don't command it. KubeMate combines AI with Kubernetes to give you natural language cluster management, intelligent troubleshooting, and visual topology.",
 };
 
 export default function RootLayout({

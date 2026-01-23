@@ -15,7 +15,7 @@ export default function ReadOnlyPage() {
       </h1>
 
       <p className="text-lg mb-8 leading-relaxed" style={{ color: 'var(--foreground)', opacity: 0.8 }}>
-        Safe by default - can't accidentally break production. Kubemate is designed for troubleshooting and monitoring, not for making changes to your cluster. By enforcing read-only access, we ensure you can investigate issues without risking production outages.
+        Safe by default - can't accidentally break production. KubeMate is designed for troubleshooting and monitoring, not for making changes to your cluster. By enforcing read-only access, we ensure you can investigate issues without risking production outages.
       </p>
 
       <div className="space-y-8">
@@ -134,7 +134,7 @@ export default function ReadOnlyPage() {
             Allowed Commands
           </h2>
           <p className="mb-4 leading-relaxed" style={{ color: 'var(--foreground)', opacity: 0.8 }}>
-            Kubemate only permits safe, read-only kubectl commands:
+            KubeMate only permits safe, read-only kubectl commands:
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">

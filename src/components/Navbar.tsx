@@ -27,17 +27,17 @@ export default function Navbar() {
           {/* Logo */}
        <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
   <Image
-    src="/icon.png"
-    alt="Kubemate"
-    width={120}
-    height={120}
+    src="/kube.svg"
+    alt="KubeMate"
+    width={80}
+    height={80}
     className="object-cover"
   />
   <span
     className="text-4xl font-bold"
     style={{ color: 'var(--foreground)' }}
   >
-    Kubemate
+    KubeMate
   </span>
 </Link>
 

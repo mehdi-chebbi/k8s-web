@@ -15,7 +15,7 @@ export default function K8sDeploymentPage() {
       </h1>
 
       <p className="text-lg mb-8 leading-relaxed" style={{ color: 'var(--foreground)', opacity: 0.8 }}>
-        Deploy Kubemate on Kubernetes itself for production environments. This method is ideal for teams who want high availability, scalability, and want to leverage Kubernetes' orchestration capabilities.
+        Deploy KubeMate on Kubernetes itself for production environments. This method is ideal for teams who want high availability, scalability, and want to leverage Kubernetes' orchestration capabilities.
       </p>
 
       <div className="space-y-8">
@@ -82,7 +82,7 @@ export default function K8sDeploymentPage() {
             Quick Start
           </h2>
           <p className="mb-4 leading-relaxed" style={{ color: 'var(--foreground)', opacity: 0.8 }}>
-            The absolute minimum setup to start using Kubemate on Kubernetes is:
+            The absolute minimum setup to start using KubeMate on Kubernetes is:
           </p>
 
           <div className="p-6 rounded-2xl mb-6" style={{ backgroundColor: 'rgba(50, 108, 229, 0.1)', border: '1px solid var(--primary)' }}>
@@ -90,7 +90,7 @@ export default function K8sDeploymentPage() {
               Choose your deployment method
             </p>
             <p className="leading-relaxed" style={{ color: 'var(--foreground)', opacity: 0.8 }}>
-              You can deploy Kubemate using Helm charts for a simplified experience, or apply Kubernetes manifests directly using kubectl for full control.
+              You can deploy KubeMate using Helm charts for a simplified experience, or apply Kubernetes manifests directly using kubectl for full control.
             </p>
           </div>
 
@@ -124,9 +124,9 @@ export default function K8sDeploymentPage() {
                       Install using Helm
                     </p>
                     <code className="block p-3 rounded-lg text-sm overflow-x-auto" style={{ backgroundColor: 'var(--card-bg)', border: '1px solid var(--card-border)', color: 'var(--accent)' }}>
-                      helm install kubemate ./helm/kubemate<br />
+                      helm install KubeMate ./helm/KubeMate<br />
                       # Or with custom values<br />
-                      helm install kubemate ./helm/kubemate -f values.yaml
+                      helm install KubeMate ./helm/KubeMate -f values.yaml
                     </code>
                   </div>
                 </div>
@@ -186,15 +186,15 @@ export default function K8sDeploymentPage() {
 
         <section>
           <h2 className="text-2xl font-bold mb-4" style={{ color: 'var(--foreground)' }}>
-            Accessing Kubemate
+            Accessing KubeMate
           </h2>
           <p className="leading-relaxed" style={{ color: 'var(--foreground)', opacity: 0.8 }}>
-            After deployment, you can access Kubemate through the Kubernetes service. To get the external IP or URL:
+            After deployment, you can access KubeMate through the Kubernetes service. To get the external IP or URL:
           </p>
           <code className="block p-4 rounded-lg text-sm mt-4 overflow-x-auto" style={{ backgroundColor: 'var(--card-bg)', border: '1px solid var(--card-border)', color: 'var(--accent)' }}>
-            kubectl get svc kubemate-frontend<br /><br />
+            kubectl get svc KubeMate-frontend<br /><br />
             # For LoadBalancer type<br />
-            kubectl get svc kubemate-frontend<br /><br />
+            kubectl get svc KubeMate-frontend<br /><br />
             # For NodePort type<br />
             kubectl get nodes -o wide
           </code>

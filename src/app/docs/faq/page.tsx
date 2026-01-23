@@ -1,28 +1,28 @@
 export default function FAQPage() {
   const faqs = [
     {
-      question: "What is Kubemate?",
-      answer: "Kubemate is an AI-powered Kubernetes assistant that lets you interact with your Kubernetes clusters using natural language. Instead of memorizing kubectl commands, you can simply ask questions in plain English and get instant, intelligent answers about your clusters. It combines ChatGPT-like AI with powerful Kubernetes visualization tools to make cluster management effortless."
+      question: "What is KubeMate?",
+      answer: "KubeMate is an AI-powered Kubernetes assistant that lets you interact with your Kubernetes clusters using natural language. Instead of memorizing kubectl commands, you can simply ask questions in plain English and get instant, intelligent answers about your clusters. It combines ChatGPT-like AI with powerful Kubernetes visualization tools to make cluster management effortless."
     },
     {
-      question: "Do I need to know kubectl to use Kubemate?",
-      answer: "No! Kubemate is specifically designed for users who want to interact with Kubernetes without memorizing complex kubectl commands. The AI understands plain English questions like 'Why is my nginx pod crashing?' or 'Show me all failing deployments' and translates them into appropriate kubectl commands automatically. You only need basic knowledge of what you want to accomplish."
+      question: "Do I need to know kubectl to use KubeMate?",
+      answer: "No! KubeMate is specifically designed for users who want to interact with Kubernetes without memorizing complex kubectl commands. The AI understands plain English questions like 'Why is my nginx pod crashing?' or 'Show me all failing deployments' and translates them into appropriate kubectl commands automatically. You only need basic knowledge of what you want to accomplish."
     },
     {
-      question: "Is Kubemate safe to use with production clusters?",
-      answer: "Yes, Kubemate is designed with security as a top priority. By default, all kubectl operations are restricted to read-only commands (get, describe, logs, top, events). This means you can safely inspect and troubleshoot your production clusters without any risk of accidental modifications. For teams that need write access, optional authentication and authorization controls are available."
+      question: "Is KubeMate safe to use with production clusters?",
+      answer: "Yes, KubeMate is designed with security as a top priority. By default, all kubectl operations are restricted to read-only commands (get, describe, logs, top, events). This means you can safely inspect and troubleshoot your production clusters without any risk of accidental modifications. For teams that need write access, optional authentication and authorization controls are available."
     },
     {
-      question: "What LLM providers does Kubemate support?",
-      answer: "Kubemate integrates with OpenRouter API, which gives you access to multiple AI models through a single interface. This includes OpenAI's GPT models, Anthropic's Claude, and other leading LLM providers. You can choose your preferred model based on your needs, budget, or existing API subscriptions. The configuration is done through the Admin Dashboard."
+      question: "What LLM providers does KubeMate support?",
+      answer: "KubeMate integrates with OpenRouter API, which gives you access to multiple AI models through a single interface. This includes OpenAI's GPT models, Anthropic's Claude, and other leading LLM providers. You can choose your preferred model based on your needs, budget, or existing API subscriptions. The configuration is done through the Admin Dashboard."
     },
     {
-      question: "How does Kubemate connect to my Kubernetes cluster?",
-      answer: "Kubemate uses standard kubeconfig files to connect to your Kubernetes clusters. You can upload your kubeconfig file through the Admin Dashboard, and it will be stored securely with encryption. The application supports multiple kubeconfigs, allowing you to manage and switch between different clusters (dev, staging, production) from a single interface."
+      question: "How does KubeMate connect to my Kubernetes cluster?",
+      answer: "KubeMate uses standard kubeconfig files to connect to your Kubernetes clusters. You can upload your kubeconfig file through the Admin Dashboard, and it will be stored securely with encryption. The application supports multiple kubeconfigs, allowing you to manage and switch between different clusters (dev, staging, production) from a single interface."
     },
     {
-      question: "Can I use Kubemate with multiple clusters?",
-      answer: "Absolutely! Kubemate has full multi-cluster support. You can add multiple kubeconfig files, each representing a different cluster. The Admin Dashboard lets you easily switch between clusters, and the AI Chat Assistant automatically operates in the context of your currently selected cluster. This makes managing complex multi-cluster environments much easier."
+      question: "Can I use KubeMate with multiple clusters?",
+      answer: "Absolutely! KubeMate has full multi-cluster support. You can add multiple kubeconfig files, each representing a different cluster. The Admin Dashboard lets you easily switch between clusters, and the AI Chat Assistant automatically operates in the context of your currently selected cluster. This makes managing complex multi-cluster environments much easier."
     },
     {
       question: "What can I do with the AI Chat Assistant?",
@@ -38,43 +38,43 @@ export default function FAQPage() {
     },
     {
       question: "What deployment options are available?",
-      answer: "Kubemate offers multiple deployment options to fit your needs: (1) Docker Compose - the easiest way to get started locally, (2) Manual Deployment - gives you full control over the installation process, (3) Kubernetes Deployment - deploy Kubemate itself on Kubernetes for production use. Each option is documented with step-by-step instructions in the Deployment section."
+      answer: "KubeMate offers multiple deployment options to fit your needs: (1) Docker Compose - the easiest way to get started locally, (2) Manual Deployment - gives you full control over the installation process, (3) Kubernetes Deployment - deploy KubeMate itself on Kubernetes for production use. Each option is documented with step-by-step instructions in the Deployment section."
     },
     {
       question: "How is my data protected?",
-      answer: "Kubemate takes data protection seriously. Kubeconfig files are encrypted at rest using industry-standard encryption. All cluster communications use secure protocols. The application itself is read-only by default, preventing accidental modifications. For enterprise deployments, additional security features include authentication, access logging, and the ability to run Kubemate entirely within your private infrastructure without external dependencies."
+      answer: "KubeMate takes data protection seriously. Kubeconfig files are encrypted at rest using industry-standard encryption. All cluster communications use secure protocols. The application itself is read-only by default, preventing accidental modifications. For enterprise deployments, additional security features include authentication, access logging, and the ability to run KubeMate entirely within your private infrastructure without external dependencies."
     },
     {
-      question: "Is Kubemate open source?",
-      answer: "Yes! Kubemate is 100% open source and released under the MIT license. This means you can freely use, modify, and distribute it for both personal and commercial purposes. The source code is available on GitHub, and contributions from the community are welcome. Open source ensures transparency, allows you to audit the code for security, and means you're not locked into any vendor."
+      question: "Is KubeMate open source?",
+      answer: "Yes! KubeMate is 100% open source and released under the MIT license. This means you can freely use, modify, and distribute it for both personal and commercial purposes. The source code is available on GitHub, and contributions from the community are welcome. Open source ensures transparency, allows you to audit the code for security, and means you're not locked into any vendor."
     },
     {
       question: "What are the system requirements?",
-      answer: "The basic requirements are minimal: (1) A Kubernetes cluster to connect to, (2) A valid kubeconfig file with read permissions, (3) An API key from an LLM provider (OpenRouter or compatible). Kubemate itself can run on any modern system with Docker support. For the Kubemate application, resource requirements are modest - a standard development machine or small cloud instance is sufficient. Detailed requirements are documented in the Requirements section."
+      answer: "The basic requirements are minimal: (1) A Kubernetes cluster to connect to, (2) A valid kubeconfig file with read permissions, (3) An API key from an LLM provider (OpenRouter or compatible). KubeMate itself can run on any modern system with Docker support. For the KubeMate application, resource requirements are modest - a standard development machine or small cloud instance is sufficient. Detailed requirements are documented in the Requirements section."
     },
     {
-      question: "Can I run Kubemate offline or air-gapped?",
-      answer: "Yes, Kubemate can be deployed in air-gapped environments. The application can be run entirely within your private network. For the AI features, you would need either (1) an internal LLM service that's compatible with the OpenRouter API format, or (2) internet connectivity to reach external LLM providers. The Kubernetes connectivity doesn't require internet access as long as your cluster is reachable from the Kubemate instance."
+      question: "Can I run KubeMate offline or air-gapped?",
+      answer: "Yes, KubeMate can be deployed in air-gapped environments. The application can be run entirely within your private network. For the AI features, you would need either (1) an internal LLM service that's compatible with the OpenRouter API format, or (2) internet connectivity to reach external LLM providers. The Kubernetes connectivity doesn't require internet access as long as your cluster is reachable from the KubeMate instance."
     },
     {
       question: "How do I get started?",
-      answer: "Getting started with Kubemate is straightforward: (1) Clone the repository and deploy using your preferred method (Docker Compose is recommended for first-time users), (2) Upload your kubeconfig file through the Admin Dashboard, (3) Add your LLM provider API key in the settings, (4) Start chatting with your cluster! That's really all you need. The Getting Started guide in the documentation walks you through each step with detailed instructions."
+      answer: "Getting started with KubeMate is straightforward: (1) Clone the repository and deploy using your preferred method (Docker Compose is recommended for first-time users), (2) Upload your kubeconfig file through the Admin Dashboard, (3) Add your LLM provider API key in the settings, (4) Start chatting with your cluster! That's really all you need. The Getting Started guide in the documentation walks you through each step with detailed instructions."
     },
     {
-      question: "Does Kubemate store my conversation history?",
-      answer: "Yes, Kubemate maintains conversation history for each chat session. This allows the AI to maintain context across follow-up questions, making conversations more natural and productive. The history is stored securely and can be managed through the Admin Dashboard. You can delete conversations, create new sessions, and control how long history is retained. For compliance-sensitive environments, you can configure shorter retention periods or disable history entirely."
+      question: "Does KubeMate store my conversation history?",
+      answer: "Yes, KubeMate maintains conversation history for each chat session. This allows the AI to maintain context across follow-up questions, making conversations more natural and productive. The history is stored securely and can be managed through the Admin Dashboard. You can delete conversations, create new sessions, and control how long history is retained. For compliance-sensitive environments, you can configure shorter retention periods or disable history entirely."
     },
     {
       question: "Can I customize which kubectl commands are allowed?",
-      answer: "By default, Kubemate only allows read-only commands (get, describe, logs, top, events, etc.). This whitelist can be customized for your specific security requirements. If your team needs to enable certain write operations, you can configure which commands are permitted. This is done through configuration files and requires careful consideration of security implications. The documentation provides guidance on safe command whitelisting."
+      answer: "By default, KubeMate only allows read-only commands (get, describe, logs, top, events, etc.). This whitelist can be customized for your specific security requirements. If your team needs to enable certain write operations, you can configure which commands are permitted. This is done through configuration files and requires careful consideration of security implications. The documentation provides guidance on safe command whitelisting."
     },
     {
       question: "What kind of support is available?",
-      answer: "As an open source project, Kubemate is supported by the community. You can file issues on GitHub, participate in discussions, and contribute improvements. For enterprise customers who need guaranteed support, commercial support options are available. The documentation is comprehensive and covers most common use cases. Additionally, the community is active and responsive to questions on GitHub and other platforms."
+      answer: "As an open source project, KubeMate is supported by the community. You can file issues on GitHub, participate in discussions, and contribute improvements. For enterprise customers who need guaranteed support, commercial support options are available. The documentation is comprehensive and covers most common use cases. Additionally, the community is active and responsive to questions on GitHub and other platforms."
     },
     {
-      question: "Can I extend Kubemate with custom features?",
-      answer: "Yes, Kubemate is designed to be extensible. Being open source, you can modify the codebase to add custom features. The architecture separates concerns clearly, making it easier to add new visualizations, extend the AI capabilities, or integrate with other tools. If you build something useful, consider contributing it back to the community! The project welcomes pull requests and feature requests."
+      question: "Can I extend KubeMate with custom features?",
+      answer: "Yes, KubeMate is designed to be extensible. Being open source, you can modify the codebase to add custom features. The architecture separates concerns clearly, making it easier to add new visualizations, extend the AI capabilities, or integrate with other tools. If you build something useful, consider contributing it back to the community! The project welcomes pull requests and feature requests."
     }
   ];
 
@@ -94,7 +94,7 @@ export default function FAQPage() {
       </h1>
 
       <p className="text-lg mb-8 leading-relaxed" style={{ color: 'var(--foreground)', opacity: 0.8 }}>
-        Got questions about Kubemate? We've got answers. Here are the most common questions people ask.
+        Got questions about KubeMate? We've got answers. Here are the most common questions people ask.
       </p>
 
       <div className="space-y-6">

@@ -15,7 +15,7 @@ export default function ManualDeploymentPage() {
       </h1>
 
       <p className="text-lg mb-8 leading-relaxed" style={{ color: 'var(--foreground)', opacity: 0.8 }}>
-        Deploy Kubemate manually for maximum control and customization. This method is ideal for developers who want full visibility into each component and prefer to run services separately.
+        Deploy KubeMate manually for maximum control and customization. This method is ideal for developers who want full visibility into each component and prefer to run services separately.
       </p>
 
       <div className="space-y-8">
@@ -82,7 +82,7 @@ export default function ManualDeploymentPage() {
             Quick Start
           </h2>
           <p className="mb-4 leading-relaxed" style={{ color: 'var(--foreground)', opacity: 0.8 }}>
-            The absolute minimum setup to start using Kubemate manually is:
+            The absolute minimum setup to start using KubeMate manually is:
           </p>
 
           <div className="space-y-4 mb-6">

@@ -41,11 +41,11 @@ export default function DeploymentPage() {
         
         <a href="/docs/deployment/kubernetes" className="block p-6 rounded-xl hover:scale-[1.02] transition-transform" style={{ backgroundColor: 'var(--card-bg)', border: '1px solid var(--card-border)' }}>
           <h2 className="text-2xl font-bold mb-2" style={{ color: 'var(--primary)' }}>Kubernetes Deployment</h2>
-          <p style={{ color: 'var(--foreground)', opacity: 0.7 }}>Run Kubemate on Kubernetes itself for production HA.</p>
+          <p style={{ color: 'var(--foreground)', opacity: 0.7 }}>Run KubeMate on Kubernetes itself for production HA.</p>
           <div className="mt-4 flex items-center gap-2 text-sm" style={{ color: 'var(--foreground)', opacity: 0.6 }}>
             <Image
-              src="/icon.png"
-              alt="Kubemate"
+              src="/kube.svg"
+              alt="KubeMate"
               width={20}
               height={20}
               className="w-5 h-5 rounded"

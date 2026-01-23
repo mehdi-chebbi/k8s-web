@@ -142,10 +142,10 @@ export default function APIKeysPage() {
 
         <section>
           <h2 className="text-2xl font-bold mb-4" style={{ color: 'var(--foreground)' }}>
-            Adding Your API Key to Kubemate
+            Adding Your API Key to KubeMate
           </h2>
           <p className="mb-4 leading-relaxed" style={{ color: 'var(--foreground)', opacity: 0.8 }}>
-            The absolute minimum steps to configure your API key in Kubemate:
+            The absolute minimum steps to configure your API key in KubeMate:
           </p>
 
           <div className="space-y-4">
@@ -186,7 +186,7 @@ export default function APIKeysPage() {
                   Click "Add API Key"
                 </p>
                 <p className="text-sm" style={{ color: 'var(--foreground)', opacity: 0.7 }}>
-                  Start the process to add a new API key to your Kubemate instance.
+                  Start the process to add a new API key to your KubeMate instance.
                 </p>
               </div>
             </div>

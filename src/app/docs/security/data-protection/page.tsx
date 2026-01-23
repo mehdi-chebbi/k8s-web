@@ -15,7 +15,7 @@ export default function DataProtectionPage() {
       </h1>
 
       <p className="text-lg mb-8 leading-relaxed" style={{ color: 'var(--foreground)', opacity: 0.8 }}>
-        Encryption and security practices for your data. Kubemate is completely self-hosted on your infrastructure, meaning all data remains on your servers and under your complete control.
+        Encryption and security practices for your data. KubeMate is completely self-hosted on your infrastructure, meaning all data remains on your servers and under your complete control.
       </p>
 
       <div className="space-y-8">
@@ -198,7 +198,7 @@ export default function DataProtectionPage() {
                 CORS Configuration
               </h3>
               <p className="leading-relaxed" style={{ color: 'var(--foreground)', opacity: 0.8 }}>
-                Properly configured CORS headers restrict API access to authorized origins only. This prevents cross-origin attacks where malicious websites could exploit your Kubemate instance.
+                Properly configured CORS headers restrict API access to authorized origins only. This prevents cross-origin attacks where malicious websites could exploit your KubeMate instance.
               </p>
             </div>
 
@@ -275,7 +275,7 @@ export default function DataProtectionPage() {
             Configuration Details
           </h2>
           <p className="leading-relaxed" style={{ color: 'var(--foreground)', opacity: 0.8 }}>
-            To make things even easier, all security features are enabled by default and require no configuration. Kubemate is completely self-hosted on your infrastructure, meaning all data remains on your servers and under your complete control.
+            To make things even easier, all security features are enabled by default and require no configuration. KubeMate is completely self-hosted on your infrastructure, meaning all data remains on your servers and under your complete control.
           </p>
           <p className="leading-relaxed mt-4" style={{ color: 'var(--foreground)', opacity: 0.8 }}>
             So you don't need to do anything more to keep your data secure right now, however take your time reading the information below to get a deeper understanding about how these concepts work.

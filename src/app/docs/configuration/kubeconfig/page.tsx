@@ -15,7 +15,7 @@ export default function KubeconfigPage() {
       </h1>
 
       <p className="text-lg mb-8 leading-relaxed" style={{ color: 'var(--foreground)', opacity: 0.8 }}>
-        Add and manage multiple kubeconfigs securely. Connect your Kubernetes clusters to Kubemate by uploading kubeconfig files. All credentials are encrypted at rest and never exposed in plain text.
+        Add and manage multiple kubeconfigs securely. Connect your Kubernetes clusters to KubeMate by uploading kubeconfig files. All credentials are encrypted at rest and never exposed in plain text.
       </p>
 
       <div className="space-y-8">

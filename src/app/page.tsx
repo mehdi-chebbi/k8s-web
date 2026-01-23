@@ -239,7 +239,7 @@ export default function Home() {
               Built for everyone who works with K8s
             </h2>
             <p className="text-xl max-w-2xl mx-auto" style={{ color: 'var(--foreground)', opacity: 0.8 }}>
-              Whether you're a DevOps pro or just getting started, Kubemate makes your life easier
+              Whether you're a DevOps pro or just getting started, KubeMate makes your life easier
             </p>
           </div>
 

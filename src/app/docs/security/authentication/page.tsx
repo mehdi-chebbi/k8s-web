@@ -15,7 +15,7 @@ export default function AuthenticationPage() {
       </h1>
 
       <p className="text-lg mb-8 leading-relaxed" style={{ color: 'var(--foreground)', opacity: 0.8 }}>
-        Secure user management and access control. Kubemate uses industry-standard security practices to protect your account and data. All authentication features are designed to prevent unauthorized access while providing a smooth user experience.
+        Secure user management and access control. KubeMate uses industry-standard security practices to protect your account and data. All authentication features are designed to prevent unauthorized access while providing a smooth user experience.
       </p>
 
       <div className="space-y-8">

@@ -15,11 +15,11 @@ export default function QuickStartPage() {
       </h1>
 
       <p className="text-lg mb-8 leading-relaxed" style={{ color: 'var(--foreground)', opacity: 0.8 }}>
-        These are the basic concepts you need to understand to start using Kubemate.
+        These are the basic concepts you need to understand to start using KubeMate.
       </p>
 
       <p className="text-lg mb-8 leading-relaxed" style={{ color: 'var(--foreground)', opacity: 0.8 }}>
-        The absolute minimum setup to start using Kubemate is:
+        The absolute minimum setup to start using KubeMate is:
       </p>
 
       <div className="space-y-4 mb-8">
@@ -58,7 +58,7 @@ export default function QuickStartPage() {
 
       <div className="p-6 rounded-2xl" style={{ backgroundColor: 'var(--card-bg)', border: '1px solid var(--card-border)' }}>
         <p className="text-lg leading-relaxed" style={{ color: 'var(--foreground)', opacity: 0.8 }}>
-          To make things even easier, Kubemate supports multiple LLM providers including OpenAI, Anthropic, and others. You can connect to your Kubernetes cluster using a kubeconfig file, and the application ensures all interactions are read-only by default for maximum security.
+          To make things even easier, KubeMate supports multiple LLM providers including OpenAI, Anthropic, and others. You can connect to your Kubernetes cluster using a kubeconfig file, and the application ensures all interactions are read-only by default for maximum security.
         </p>
         <p className="text-lg leading-relaxed mt-4" style={{ color: 'var(--foreground)', opacity: 0.8 }}>
           So you don't need to do anything more to start exploring your clusters right now, however take your time reading the information below to get a deeper understanding about how these concepts work.

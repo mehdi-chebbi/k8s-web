@@ -24,7 +24,7 @@ export default function AdminDashboardPage() {
             What It Does
           </h2>
           <p className="mb-4 leading-relaxed" style={{ color: 'var(--foreground)', opacity: 0.8 }}>
-            The Admin Dashboard is the absolute minimum you need to manage your Kubemate instance:
+            The Admin Dashboard is the absolute minimum you need to manage your KubeMate instance:
           </p>
 
           <div className="space-y-3">
@@ -228,7 +228,7 @@ export default function AdminDashboardPage() {
             To make things even easier, Admin Dashboard provides a centralized interface for all management tasks. You can manage users, clusters, API keys, and AI configuration without touching any configuration files.
           </p>
           <p className="leading-relaxed mt-4" style={{ color: 'var(--foreground)', opacity: 0.8 }}>
-            So you don't need to do anything more to start managing your Kubemate instance right now, however take your time reading information below to get a deeper understanding about how these concepts work.
+            So you don't need to do anything more to start managing your KubeMate instance right now, however take your time reading information below to get a deeper understanding about how these concepts work.
           </p>
         </section>
       </div>

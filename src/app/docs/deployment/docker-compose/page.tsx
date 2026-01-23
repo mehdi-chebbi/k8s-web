@@ -15,7 +15,7 @@ export default function DockerComposePage() {
       </h1>
 
       <p className="text-lg mb-8 leading-relaxed" style={{ color: 'var(--foreground)', opacity: 0.8 }}>
-        Deploy Kubemate quickly and easily using Docker Compose. This method is ideal for development environments, small teams, or anyone who wants to get up and running with minimal configuration.
+        Deploy KubeMate quickly and easily using Docker Compose. This method is ideal for development environments, small teams, or anyone who wants to get up and running with minimal configuration.
       </p>
 
       <div className="space-y-8">
@@ -72,7 +72,7 @@ export default function DockerComposePage() {
             Quick Start
           </h2>
           <p className="mb-4 leading-relaxed" style={{ color: 'var(--foreground)', opacity: 0.8 }}>
-            The absolute minimum setup to start using Kubemate with Docker Compose is:
+            The absolute minimum setup to start using KubeMate with Docker Compose is:
           </p>
 
           <div className="space-y-4 mb-6">
@@ -143,10 +143,10 @@ export default function DockerComposePage() {
 
         <section>
           <h2 className="text-2xl font-bold mb-4" style={{ color: 'var(--foreground)' }}>
-            Accessing Kubemate
+            Accessing KubeMate
           </h2>
           <p className="mb-4 leading-relaxed" style={{ color: 'var(--foreground)', opacity: 0.8 }}>
-            Once the containers are running, you can access Kubemate at:
+            Once the containers are running, you can access KubeMate at:
           </p>
           <code className="block p-4 rounded-lg text-lg" style={{ backgroundColor: 'var(--card-bg)', border: '1px solid var(--card-border)', color: 'var(--accent)' }}>
             http://localhost:3000

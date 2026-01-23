@@ -19,7 +19,7 @@ export default function RequirementsPage() {
       </h1>
 
       <p className="text-xl mb-8 leading-relaxed" style={{ color: 'var(--foreground)', opacity: 0.8 }}>
-        Prerequisites and system requirements to run Kubemate.
+        Prerequisites and system requirements to run KubeMate.
       </p>
 
       {/* System Requirements */}
@@ -76,7 +76,7 @@ export default function RequirementsPage() {
           <div className="p-4 rounded-xl" style={{ backgroundColor: 'var(--card-bg)', border: '1px solid var(--card-border)' }}>
             <h3 className="font-semibold mb-2 flex items-center gap-2" style={{ color: 'var(--foreground)' }}>
               <Image
-                src="/icon.png"
+                src="/kube.svg"
                 alt="kubectl"
                 width={20}
                 height={20}
