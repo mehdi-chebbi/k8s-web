@@ -56,48 +56,13 @@ export default function DocsLayout({
       <div className="flex">
         {/* Sidebar */}
         <aside
-          className="w-72 fixed h-screen overflow-y-auto border-r hidden lg:block"
+          className="w-72 fixed top-16 bottom-0 left-0 overflow-y-auto border-r hidden lg:block"
           style={{
             backgroundColor: 'var(--card-bg)',
             borderColor: 'var(--card-border)',
           }}
         >
           <div className="p-6">
-            {/* Logo */}
-            <a
-              href="/"
-              className="flex items-center gap-2 mb-8 hover:opacity-80 transition-opacity"
-            >
-              <div
-                className="w-8 h-8 rounded-lg flex items-center justify-center"
-                style={{ backgroundColor: 'var(--primary)' }}
-              >
-                <svg
-                  className="w-5 h-5"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M4 9V15H9V17H2V7H9V9H4Z"
-                    fill="white"
-                  />
-                  <path
-                    d="M11 7V17H13V13H17V17H19V7H17V11H13V7H11Z"
-                    fill="white"
-                  />
-                  <circle cx="10" cy="6" r="2" fill="white" />
-                  <circle cx="14" cy="18" r="2" fill="white" />
-                </svg>
-              </div>
-              <span
-                className="text-lg font-bold"
-                style={{ color: 'var(--foreground)' }}
-              >
-                Kubemate
-              </span>
-            </a>
-
             {/* Nav */}
             <nav>
               {docsNav.map((section) => (
