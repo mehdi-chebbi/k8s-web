@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 export default function Navbar() {
@@ -25,13 +26,14 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-            <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: 'var(--primary)' }}>
-              <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4 9V15H9V17H2V7H9V9H4Z" fill="white" />
-                <path d="M11 7V17H13V13H17V17H19V7H17V11H13V7H11Z" fill="white" />
-                <circle cx="10" cy="6" r="2" fill="white" />
-                <circle cx="14" cy="18" r="2" fill="white" />
-              </svg>
+            <div className="w-14 h-14 rounded-lg flex items-center justify-center" style={{ backgroundColor: 'var(--primary)' }}>
+              <Image
+                src="/icon.png"
+                alt="Kubemate"
+       width={80}
+                height={80}
+                className="w-full h-full object-cover"
+              />
             </div>
             <span className="text-2xl font-bold" style={{ color: 'var(--foreground)' }}>Kubemate</span>
           </Link>

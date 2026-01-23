@@ -1,3 +1,7 @@
+'use client';
+
+import Image from 'next/image';
+
 export default function RequirementsPage() {
   return (
     <div>
@@ -71,12 +75,14 @@ export default function RequirementsPage() {
 
           <div className="p-4 rounded-xl" style={{ backgroundColor: 'var(--card-bg)', border: '1px solid var(--card-border)' }}>
             <h3 className="font-semibold mb-2 flex items-center gap-2" style={{ color: 'var(--foreground)' }}>
-              <svg className="w-5 h-5" style={{ color: 'var(--secondary)' }} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4 9V15H9V17H2V7H9V9H4Z" fill="currentColor" />
-                <path d="M11 7V17H13V13H17V17H19V7H17V11H13V7H11Z" fill="currentColor" />
-                <circle cx="10" cy="6" r="2" fill="currentColor" />
-                <circle cx="14" cy="18" r="2" fill="currentColor" />
-              </svg>
+              <Image
+                src="/icon.png"
+                alt="kubectl"
+                width={20}
+                height={20}
+                className="w-5 h-5 rounded"
+                style={{ color: 'var(--secondary)' }}
+              />
               kubectl
             </h3>
             <p className="text-sm mb-2" style={{ color: 'var(--foreground)', opacity: 0.7 }}>

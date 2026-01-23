@@ -1,3 +1,7 @@
+'use client';
+
+import Image from 'next/image';
+
 export default function DeploymentPage() {
   return (
     <div>
@@ -39,12 +43,14 @@ export default function DeploymentPage() {
           <h2 className="text-2xl font-bold mb-2" style={{ color: 'var(--primary)' }}>Kubernetes Deployment</h2>
           <p style={{ color: 'var(--foreground)', opacity: 0.7 }}>Run Kubemate on Kubernetes itself for production HA.</p>
           <div className="mt-4 flex items-center gap-2 text-sm" style={{ color: 'var(--foreground)', opacity: 0.6 }}>
-            <svg className="w-5 h-5" style={{ color: 'var(--primary)' }} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4 9V15H9V17H2V7H9V9H4Z" fill="currentColor" />
-              <path d="M11 7V17H13V13H17V17H19V7H17V11H13V7H11Z" fill="currentColor" />
-              <circle cx="10" cy="6" r="2" fill="currentColor" />
-              <circle cx="14" cy="18" r="2" fill="currentColor" />
-            </svg>
+            <Image
+              src="/icon.png"
+              alt="Kubemate"
+              width={20}
+              height={20}
+              className="w-5 h-5 rounded"
+              style={{ color: 'var(--primary)' }}
+            />
             Production ready • High availability • Cloud native
           </div>
         </a>
