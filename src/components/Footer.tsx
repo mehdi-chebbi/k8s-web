@@ -85,7 +85,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="https://github.com/mehdi-chebbi/k8s-web"
+                  href="https://github.com/mehdi-chebbi/kubemate"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm transition-colors hover:text-[var(--primary)] flex items-center gap-2"

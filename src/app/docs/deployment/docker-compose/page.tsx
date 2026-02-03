@@ -86,7 +86,7 @@ export default function DockerComposePage() {
                 </p>
                 <code className="block p-3 rounded-lg text-sm overflow-x-auto" style={{ backgroundColor: 'var(--card-bg)', border: '1px solid var(--card-border)', color: 'var(--accent)' }}>
                   git clone https://github.com/mehdi-chebbi/kubemate.git<br />
-                  cd k8s-web
+                  cd kubemate
                 </code>
               </div>
             </div>
