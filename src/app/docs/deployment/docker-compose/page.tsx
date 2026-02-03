@@ -85,39 +85,13 @@ export default function DockerComposePage() {
                   Clone the repository
                 </p>
                 <code className="block p-3 rounded-lg text-sm overflow-x-auto" style={{ backgroundColor: 'var(--card-bg)', border: '1px solid var(--card-border)', color: 'var(--accent)' }}>
-                  git clone https://github.com/mehdi-chebbi/k8s-web.git<br />
+                  git clone https://github.com/mehdi-chebbi/kubemate.git<br />
                   cd k8s-web
                 </code>
               </div>
             </div>
 
-            <div className="flex items-start gap-3">
-              <div className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-1" style={{ backgroundColor: 'var(--secondary)', color: 'white' }}>
-                <span className="text-xs font-bold">2</span>
-              </div>
-              <div>
-                <p className="font-semibold mb-1" style={{ color: 'var(--foreground)' }}>
-                  Copy the example environment file
-                </p>
-                <code className="block p-3 rounded-lg text-sm overflow-x-auto" style={{ backgroundColor: 'var(--card-bg)', border: '1px solid var(--card-border)', color: 'var(--accent)' }}>
-                  cp .env.example .env
-                </code>
-              </div>
-            </div>
 
-            <div className="flex items-start gap-3">
-              <div className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-1" style={{ backgroundColor: 'var(--secondary)', color: 'white' }}>
-                <span className="text-xs font-bold">3</span>
-              </div>
-              <div>
-                <p className="font-semibold mb-1" style={{ color: 'var(--foreground)' }}>
-                  Edit the .env file with your configuration
-                </p>
-                <p className="text-sm mb-2" style={{ color: 'var(--foreground)', opacity: 0.7 }}>
-                  Set your LLM provider API key and kubeconfig path
-                </p>
-              </div>
-            </div>
 
             <div className="flex items-start gap-3">
               <div className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-1" style={{ backgroundColor: 'var(--secondary)', color: 'white' }}>

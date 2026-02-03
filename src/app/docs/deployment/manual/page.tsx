@@ -95,8 +95,8 @@ export default function ManualDeploymentPage() {
                   Clone the repository
                 </p>
                 <code className="block p-3 rounded-lg text-sm overflow-x-auto" style={{ backgroundColor: 'var(--card-bg)', border: '1px solid var(--card-border)', color: 'var(--accent)' }}>
-                  git clone https://github.com/mehdi-chebbi/k8s-web.git<br />
-                  cd k8s-web
+                  git clone https://github.com/mehdi-chebbi/kubemate.git<br />
+                  cd kubemate
                 </code>
               </div>
             </div>
@@ -110,7 +110,7 @@ export default function ManualDeploymentPage() {
                   Install backend dependencies
                 </p>
                 <code className="block p-3 rounded-lg text-sm overflow-x-auto" style={{ backgroundColor: 'var(--card-bg)', border: '1px solid var(--card-border)', color: 'var(--accent)' }}>
-                  cd backend<br />
+                  cd project/<br />
                   pip install -r requirements.txt
                 </code>
               </div>
@@ -125,13 +125,9 @@ export default function ManualDeploymentPage() {
                   Configure environment variables
                 </p>
                 <p className="text-sm mb-2" style={{ color: 'var(--foreground)', opacity: 0.7 }}>
-                  Make sure PostgreSQL 15 or higher is running, then configure the .env file with your database credentials, LLM API key, and kubeconfig settings.
+                  Make sure PostgreSQL 15 or higher is running, then configure the .env file with your database credentials.
                 </p>
-                <code className="block p-3 rounded-lg text-sm overflow-x-auto" style={{ backgroundColor: 'var(--card-bg)', border: '1px solid var(--card-border)', color: 'var(--accent)' }}>
-                  # In backend directory<br />
-                  cp .env.example .env<br />
-                  # Edit .env with your configuration
-                </code>
+
               </div>
             </div>
 
@@ -158,7 +154,7 @@ export default function ManualDeploymentPage() {
                   Install frontend dependencies
                 </p>
                 <code className="block p-3 rounded-lg text-sm overflow-x-auto" style={{ backgroundColor: 'var(--card-bg)', border: '1px solid var(--card-border)', color: 'var(--accent)' }}>
-                  cd ../frontend<br />
+                  cd main-app<br />
                   npm install
                 </code>
               </div>

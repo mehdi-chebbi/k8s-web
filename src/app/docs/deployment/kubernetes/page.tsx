@@ -94,48 +94,57 @@ export default function K8sDeploymentPage() {
             </p>
           </div>
 
-          <div className="space-y-8 mb-6">
+            <div className="space-y-8 mb-6">
+  <div>
+    <h3 className="text-xl font-bold mb-4" style={{ color: 'var(--foreground)' }}>
+      Option 1: Helm Charts (Recommended)
+    </h3>
+    <div className="space-y-4">
+      <div className="flex items-start gap-3">
+        <div className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-1" style={{ backgroundColor: 'var(--secondary)', color: 'white' }}>
+          <span className="text-xs font-bold">1</span>
+        </div>
+        <div>
+          <p className="font-semibold mb-1" style={{ color: 'var(--foreground)' }}>
+            Add the Helm repository
+          </p>
+          <code className="block p-3 rounded-lg text-sm overflow-x-auto" style={{ backgroundColor: 'var(--card-bg)', border: '1px solid var(--card-border)', color: 'var(--accent)' }}>
+            helm repo add kubemate https://mehdi-chebbi.github.io/KubeMate/
+          </code>
+        </div>
+      </div>
+      <div className="flex items-start gap-3">
+        <div className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-1" style={{ backgroundColor: 'var(--secondary)', color: 'white' }}>
+          <span className="text-xs font-bold">2</span>
+        </div>
+        <div>
+          <p className="font-semibold mb-1" style={{ color: 'var(--foreground)' }}>
+            Update the repository
+          </p>
+          <code className="block p-3 rounded-lg text-sm overflow-x-auto" style={{ backgroundColor: 'var(--card-bg)', border: '1px solid var(--card-border)', color: 'var(--accent)' }}>
+            helm repo update
+          </code>
+        </div>
+      </div>
+      <div className="flex items-start gap-3">
+        <div className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-1" style={{ backgroundColor: 'var(--secondary)', color: 'white' }}>
+          <span className="text-xs font-bold">3</span>
+        </div>
+        <div>
+          <p className="font-semibold mb-1" style={{ color: 'var(--foreground)' }}>
+            Install using Helm
+          </p>
+          <code className="block p-3 rounded-lg text-sm overflow-x-auto" style={{ backgroundColor: 'var(--card-bg)', border: '1px solid var(--card-border)', color: 'var(--accent)' }}>
+            helm install my-kubemate kubemate/kubemate<br />
+          </code>
+        </div>
+      </div>
+    </div>
+  </div>
+
             <div>
               <h3 className="text-xl font-bold mb-4" style={{ color: 'var(--foreground)' }}>
-                Option 1: Helm Charts (Recommended)
-              </h3>
-              <div className="space-y-4">
-                <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-1" style={{ backgroundColor: 'var(--secondary)', color: 'white' }}>
-                    <span className="text-xs font-bold">1</span>
-                  </div>
-                  <div>
-                    <p className="font-semibold mb-1" style={{ color: 'var(--foreground)' }}>
-                      Clone the repository
-                    </p>
-                    <code className="block p-3 rounded-lg text-sm overflow-x-auto" style={{ backgroundColor: 'var(--card-bg)', border: '1px solid var(--card-border)', color: 'var(--accent)' }}>
-                      git clone https://github.com/mehdi-chebbi/k8s-web.git<br />
-                      cd k8s-web
-                    </code>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-1" style={{ backgroundColor: 'var(--secondary)', color: 'white' }}>
-                    <span className="text-xs font-bold">2</span>
-                  </div>
-                  <div>
-                    <p className="font-semibold mb-1" style={{ color: 'var(--foreground)' }}>
-                      Install using Helm
-                    </p>
-                    <code className="block p-3 rounded-lg text-sm overflow-x-auto" style={{ backgroundColor: 'var(--card-bg)', border: '1px solid var(--card-border)', color: 'var(--accent)' }}>
-                      helm install KubeMate ./helm/KubeMate<br />
-                      # Or with custom values<br />
-                      helm install KubeMate ./helm/KubeMate -f values.yaml
-                    </code>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-bold mb-4" style={{ color: 'var(--foreground)' }}>
-                Option 2: Kubernetes Manifests
+                Option 2: Kubernetes Manifests (More Control)
               </h3>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
@@ -147,8 +156,8 @@ export default function K8sDeploymentPage() {
                       Clone the repository
                     </p>
                     <code className="block p-3 rounded-lg text-sm overflow-x-auto" style={{ backgroundColor: 'var(--card-bg)', border: '1px solid var(--card-border)', color: 'var(--accent)' }}>
-                      git clone https://github.com/mehdi-chebbi/k8s-web.git<br />
-                      cd k8s-web
+                      git clone https://github.com/mehdi-chebbi/kubemate.git<br />
+                      cd kubemate/k8s
                     </code>
                   </div>
                 </div>
@@ -162,14 +171,11 @@ export default function K8sDeploymentPage() {
                       Apply Kubernetes manifests
                     </p>
                     <code className="block p-3 rounded-lg text-sm overflow-x-auto" style={{ backgroundColor: 'var(--card-bg)', border: '1px solid var(--card-border)', color: 'var(--accent)' }}>
-                      # Apply all manifests at once<br />
-                      kubectl apply -f k8s/<br /><br />
-                      # Or apply individually<br />
-                      kubectl apply -f k8s/db.yaml<br />
-                      kubectl apply -f k8s/pvc.yaml<br />
-                      kubectl apply -f k8s/backend.yaml<br />
-                      kubectl apply -f k8s/frontend.yaml<br />
-                      kubectl apply -f k8s/svc.yaml
+                      # apply individually<br />
+                      kubectl apply -f k8s/<br />
+                      kubectl apply -f k8s/backend/<br />
+                      kubectl apply -f k8s/db/<br />
+                      kubectl apply -f k8s/frontend/<br />
                     </code>
                   </div>
                 </div>
@@ -177,11 +183,6 @@ export default function K8sDeploymentPage() {
             </div>
           </div>
 
-          <div className="p-6 rounded-2xl" style={{ backgroundColor: 'rgba(16, 185, 129, 0.1)', border: '1px solid var(--success)' }}>
-            <p className="font-semibold" style={{ color: 'var(--foreground)' }}>
-              that's it!
-            </p>
-          </div>
         </section>
 
         <section>
@@ -189,14 +190,12 @@ export default function K8sDeploymentPage() {
             Accessing KubeMate
           </h2>
           <p className="leading-relaxed" style={{ color: 'var(--foreground)', opacity: 0.8 }}>
-            After deployment, you can access KubeMate through the Kubernetes service. To get the external IP or URL:
+            After deployment, you can access KubeMate through the Kubernetes service. To get URL:
           </p>
           <code className="block p-4 rounded-lg text-sm mt-4 overflow-x-auto" style={{ backgroundColor: 'var(--card-bg)', border: '1px solid var(--card-border)', color: 'var(--accent)' }}>
-            kubectl get svc KubeMate-frontend<br /><br />
-            # For LoadBalancer type<br />
-            kubectl get svc KubeMate-frontend<br /><br />
-            # For NodePort type<br />
-            kubectl get nodes -o wide
+            kubectl get svc -n kubemate<br /><br />
+              kubectl port-forward svc/kubemate-frontend 3000:80 -n kubemate<br /><br />
+            Then open your browser to: http://localhost:3000 <br/>
           </code>
         </section>
 
