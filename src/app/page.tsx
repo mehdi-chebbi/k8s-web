@@ -47,8 +47,9 @@ export default function Home() {
                 View Documentation
               </a>
               <a
-                href="https://github.com"
-                className="w-full sm:w-auto px-8 py-4 rounded-xl font-semibold text-lg transition-all hover:scale-105 flex items-center justify-center gap-2"
+                href="https://github.com/mehdi-chebbi/kubemate"
+                target="_blank"
+                rel="noopener noreferrer"                className="w-full sm:w-auto px-8 py-4 rounded-xl font-semibold text-lg transition-all hover:scale-105 flex items-center justify-center gap-2"
                 style={{ backgroundColor: 'var(--card-bg)', color: 'var(--foreground)', border: '1px solid var(--card-border)' }}
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
