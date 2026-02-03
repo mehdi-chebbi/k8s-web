@@ -184,11 +184,11 @@ export default function ContactPage() {
                 </div>
                 <h3 className="text-lg font-semibold" style={{ color: 'var(--foreground)' }}>Email</h3>
               </div>
-              <p className="leading-relaxed" style={{ color: 'var(--foreground)', opacity: 0.8 }}>
-                support@KubeMate.io
-              </p>
+              <a href="mailto:mehdichebbi111@gmail.com" className="leading-relaxed hover:text-[var(--primary)] transition-colors" style={{ color: 'var(--foreground)', opacity: 0.8 }}>
+                mehdichebbi111@gmail.com
+              </a>
               <p className="text-sm mt-2 leading-relaxed" style={{ color: 'var(--foreground)', opacity: 0.6 }}>
-                We typically respond within 24 hours
+                I typically respond within 24 hours
               </p>
             </div>
 
@@ -201,11 +201,11 @@ export default function ContactPage() {
                 </div>
                 <h3 className="text-lg font-semibold" style={{ color: 'var(--foreground)' }}>GitHub</h3>
               </div>
-              <p className="leading-relaxed" style={{ color: 'var(--foreground)', opacity: 0.8 }}>
-                github.com/mehdi-chebbi/k8s-web
-              </p>
+              <a href="https://github.com/mehdi-chebbi/kubemate" target="_blank" rel="noopener noreferrer" className="leading-relaxed hover:text-[var(--primary)] transition-colors" style={{ color: 'var(--foreground)', opacity: 0.8 }}>
+                github.com/mehdi-chebbi/kubemate
+              </a>
               <p className="text-sm mt-2 leading-relaxed" style={{ color: 'var(--foreground)', opacity: 0.6 }}>
-                Star us, report issues, contribute
+                Star the repo, report issues, contribute
               </p>
             </div>
           </div>
@@ -220,8 +220,9 @@ export default function ContactPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a
-                href="https://github.com"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-medium transition-all hover:scale-105"
+                href="https://github.com/mehdi-chebbi/kubemate"
+                target="_blank"
+                rel="noopener noreferrer"                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-medium transition-all hover:scale-105"
                 style={{ backgroundColor: 'var(--card-bg)', color: 'var(--foreground)', border: '1px solid var(--card-border)' }}
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -230,8 +231,9 @@ export default function ContactPage() {
                 GitHub
               </a>
               <a
-                href="#"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-medium transition-all hover:scale-105"
+         href="https://www.linkedin.com/in/mehdi-chebbi22/"
+                target="_blank"
+                rel="noopener noreferrer"                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-medium transition-all hover:scale-105"
                 style={{ backgroundColor: 'var(--card-bg)', color: 'var(--foreground)', border: '1px solid var(--card-border)' }}
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
